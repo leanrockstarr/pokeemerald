@@ -6,7 +6,7 @@
 #define TX_DEBUG_SYSTEM_HELD_KEYS      (R_BUTTON)         // The keys required to be held to open the debug menu.
 #define TX_DEBUG_SYSTEM_TRIGGER_EVENT  pressedStartButton // The event that opens the menu when holding the key(s) defined in DEBUG_SYSTEM_HELD_KEYS.
 #define TX_DEBUG_SYSTEM_IN_MENU        FALSE              // Replaces the overworld debug menu button combination with a start menu entry (above Pokédex).
-
+#define TX_DEBUGGING
 
 void Debug_ShowMainMenu(void);
 void Debug_ReShowBattleDebugMenu(void);
