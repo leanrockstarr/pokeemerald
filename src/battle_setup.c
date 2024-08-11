@@ -835,6 +835,14 @@ static u8 GetSumOfEnemyPartyLevel(u16 opponentId, u8 numMons)
                 sum += party[i].lvl;
         }
         break;
+    case F_TRAINER_PARTY_EVS:
+        {
+            const struct TrainerMonItemCustomMovesEVs *party;
+            party = gTrainers[opponentId].party.ItemCustomMovesEVs;
+            for (i = 0; i < count; i++)
+                sum += party[i].lvl;
+        }
+        break;
     }
 
     return sum;
