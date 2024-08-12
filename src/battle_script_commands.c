@@ -9936,7 +9936,7 @@ static void Cmd_handleballthrow(void)
 
         if (gLastUsedItem != ITEM_SAFARI_BALL)
         {
-            if (gLastUsedItem == ITEM_MASTER_BALL)
+            if (gLastUsedItem >= ITEM_MASTER_BALL && gLastUsedItem <= ITEM_PREMIER_BALL)
             {
                 gBattleResults.usedMasterBall = TRUE;
             }
