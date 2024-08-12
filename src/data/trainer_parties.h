@@ -3368,27 +3368,60 @@ static const struct TrainerMonItemCustomMoves sParty_Drake[] = {
     }
 };
 
-static const struct TrainerMonItemCustomMoves sParty_Roxanne1[] = {
+static const struct TrainerMonItemCustomMovesEVs sParty_Roxanne1[] = {
     {
-    .iv = 100,
-    .lvl = 12,
-    .species = SPECIES_GEODUDE,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_TACKLE, MOVE_DEFENSE_CURL, MOVE_ROCK_THROW, MOVE_ROCK_TOMB}
+    .iv = 255,
+    .lvl = 100,
+    .evs = {0, 252, 0, 0, 4, 252},
+    .species = SPECIES_TYRANITAR,
+    .heldItem = ITEM_LEFTOVERS,
+    .abilityNums = 0,
+    .moves = {MOVE_EARTHQUAKE, MOVE_ROCK_SLIDE, MOVE_ICE_BEAM, MOVE_DRAGON_DANCE}
     },
     {
-    .iv = 100,
-    .lvl = 12,
-    .species = SPECIES_GEODUDE,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_TACKLE, MOVE_DEFENSE_CURL, MOVE_ROCK_THROW, MOVE_ROCK_TOMB}
+    .iv = 255,
+    .lvl = 100,
+    .evs = {252, 0, 4, 0, 252, 0},
+    .species = SPECIES_CRADILY,
+    .heldItem = ITEM_LEFTOVERS,
+    .abilityNums = 0,
+    .moves = {MOVE_EARTHQUAKE, MOVE_ROCK_SLIDE, MOVE_TOXIC, MOVE_RECOVER}
     },
     {
-    .iv = 200,
-    .lvl = 15,
-    .species = SPECIES_NOSEPASS,
-    .heldItem = ITEM_ORAN_BERRY,
-    .moves = {MOVE_BLOCK, MOVE_HARDEN, MOVE_TACKLE, MOVE_ROCK_TOMB}
+    .iv = 255,
+    .lvl = 100,
+    .evs = {0, 0, 0, 252, 4, 252},
+    .species = SPECIES_OMASTAR,
+    .heldItem = ITEM_LEFTOVERS,
+    .abilityNums = 1,
+    .moves = {MOVE_SURF, MOVE_ICE_BEAM, MOVE_THIEF, MOVE_TOXIC}
+    },
+    {
+    .iv = 255,
+    .lvl = 100,
+    .evs = {252, 252, 0, 0, 4, 0},
+    .species = SPECIES_RHYDON,
+    .heldItem = ITEM_CHOICE_BAND,
+    .abilityNums = 1,
+    .moves = {MOVE_EARTHQUAKE, MOVE_ROCK_SLIDE, MOVE_MEGAHORN, MOVE_DOUBLE_EDGE}
+    },
+    {
+    .iv = 255,
+    .lvl = 100,
+    .evs = {0, 252, 0, 0, 4, 252},
+    .species = SPECIES_AERODACTYL,
+    .heldItem = ITEM_SHARP_BEAK,
+    .abilityNums = 0,
+    .moves = {MOVE_EARTHQUAKE, MOVE_ROCK_SLIDE, MOVE_DOUBLE_EDGE, MOVE_AERIAL_ACE}
+    },
+    {
+    .iv = 255,
+    .lvl = 100,
+    .evs = {252, 252, 0, 0, 4, 0},
+    .species = SPECIES_REGIROCK,
+    .heldItem = ITEM_LEFTOVERS,
+    .abilityNums = 0,
+    .moves = {MOVE_EARTHQUAKE, MOVE_ROCK_SLIDE, MOVE_BRICK_BREAK, MOVE_CURSE}
     }
 };
 
