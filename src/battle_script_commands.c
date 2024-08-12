@@ -9936,7 +9936,7 @@ static void Cmd_handleballthrow(void)
 
         if (gLastUsedItem != ITEM_SAFARI_BALL)
         {
-            if (gLastUsedItem >= ITEM_MASTER_BALL && gLastUsedItem <= ITEM_PREMIER_BALL)
+            if (gLastUsedItem == ITEM_MASTER_BALL)
             {
                 gBattleResults.usedMasterBall = TRUE;
             }
@@ -9968,7 +9968,7 @@ static void Cmd_handleballthrow(void)
 
             for (shakes = 0; shakes < BALL_3_SHAKES_SUCCESS && Random() < odds; shakes++);
 
-            if (gLastUsedItem == ITEM_MASTER_BALL)
+            if (gLastUsedItem >= ITEM_MASTER_BALL && gLastUsedItem <= ITEM_PREMIER_BALL)
                 shakes = BALL_3_SHAKES_SUCCESS; // why calculate the shakes before that check?
 
             BtlController_EmitBallThrowAnim(BUFFER_A, shakes);
