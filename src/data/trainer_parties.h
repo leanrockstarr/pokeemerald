@@ -165,11 +165,13 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Declan[] = {
     }
 };
 
-static const struct TrainerMonNoItemDefaultMoves sParty_GruntRusturfTunnel[] = {
+static const struct TrainerMonItemCustomMoves sParty_GruntRusturfTunnel[] = {
     {
-    .iv = 0,
-    .lvl = 11,
-    .species = SPECIES_POOCHYENA,
+    .iv = 255,
+    .lvl = 100,
+    .species = SPECIES_MIGHTYENA,
+    .heldItem = ITEM_LEFTOVERS,
+    .moves = {MOVE_CRUNCH, MOVE_BODY_SLAM, MOVE_SHADOW_BALL, MOVE_COUNTER}
     }
 };
 
@@ -7929,29 +7931,45 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Macey[] = {
     }
 };
 
-static const struct TrainerMonNoItemDefaultMoves sParty_BrendanRustboroTreecko[] = {
+static const struct TrainerMonItemCustomMovesEVs sParty_BrendanRustboroTreecko[] = {
     {
-    .iv = 25,
-    .lvl = 13,
-    .species = SPECIES_LOTAD,
+    .iv = 255,
+    .lvl = 100,
+    .evs = {0, 252, 0, 0, 4, 252},
+    .species = SPECIES_SHIFTRY,
+    .heldItem = ITEM_LEFTOVERS,
+    .abilityNums = 0,
+    .moves = {MOVE_SUNNY_DAY, MOVE_SOLAR_BEAM, MOVE_BRICK_BREAK, MOVE_QUICK_ATTACK}
     },
     {
-    .iv = 50,
-    .lvl = 15,
-    .species = SPECIES_TORCHIC,
+    .iv = 255,
+    .lvl = 100,
+    .evs = {80, 252, 0, 0, 0, 176},
+    .species = SPECIES_BLAZIKEN,
+    .heldItem = ITEM_SALAC_BERRY,
+    .abilityNums = 0,
+    .moves = {MOVE_REVERSAL, MOVE_FIRE_BLAST, MOVE_QUICK_ATTACK, MOVE_SWORDS_DANCE}
     }
 };
 
-static const struct TrainerMonNoItemDefaultMoves sParty_BrendanRustboroMudkip[] = {
+static const struct TrainerMonItemCustomMovesEVs sParty_BrendanRustboroMudkip[] = {
     {
-    .iv = 25,
-    .lvl = 13,
-    .species = SPECIES_WINGULL,
+    .iv = 255,
+    .lvl = 100,
+    .evs = {252, 252, 0, 0, 0, 4},
+    .species = SPECIES_AZUMARILL,
+    .heldItem = ITEM_LEFTOVERS,
+    .abilityNums = 1,
+    .moves = {MOVE_SUBSTITUTE, MOVE_FOCUS_PUNCH, MOVE_DOUBLE_EDGE, MOVE_SING}
     },
     {
-    .iv = 50,
-    .lvl = 15,
-    .species = SPECIES_TREECKO,
+    .iv = 255,
+    .lvl = 100,
+    .evs = {0, 0, 0, 252, 4, 252},
+    .species = SPECIES_SCEPTILE,
+    .heldItem = ITEM_PETAYA_BERRY,
+    .abilityNums = 0,
+    .moves = {MOVE_SUBSTITUTE, MOVE_LEECH_SEED, MOVE_LEAF_BLADE, MOVE_THUNDER_PUNCH}
     }
 };
 
@@ -8025,29 +8043,45 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Jonathan[] = {
     }
 };
 
-static const struct TrainerMonNoItemDefaultMoves sParty_BrendanRustboroTorchic[] = {
+static const struct TrainerMonItemCustomMovesEVs sParty_BrendanRustboroTorchic[] = {
     {
-    .iv = 25,
-    .lvl = 13,
-    .species = SPECIES_SLUGMA,
+    .iv = 255,
+    .lvl = 100,
+    .evs = {100, 0, 0, 252, 0, 156},
+    .species = SPECIES_NINETALES,
+    .heldItem = ITEM_LEFTOVERS,
+    .abilityNums = 0,
+    .moves = {MOVE_HEAT_WAVE, MOVE_HYPNOSIS, MOVE_WILL_O_WISP , MOVE_FAINT_ATTACK}
     },
     {
-    .iv = 50,
-    .lvl = 15,
-    .species = SPECIES_MUDKIP,
+    .iv = 255,
+    .lvl = 100,
+    .evs = {252, 0, 156, 0, 100, 0},
+    .species = SPECIES_SWAMPERT,
+    .heldItem = ITEM_CHESTO_BERRY,
+    .abilityNums = 0,
+    .moves = {MOVE_EARTHQUAKE, MOVE_ROCK_SLIDE, MOVE_ICE_BEAM, MOVE_REST}
     }
 };
 
-static const struct TrainerMonNoItemDefaultMoves sParty_MayRustboroMudkip[] = {
+static const struct TrainerMonItemCustomMovesEVs sParty_MayRustboroMudkip[] = {
     {
-    .iv = 25,
-    .lvl = 13,
-    .species = SPECIES_WINGULL,
+    .iv = 255,
+    .lvl = 100,
+    .evs = {252, 252, 0, 0, 0, 4},
+    .species = SPECIES_AZUMARILL,
+    .heldItem = ITEM_LEFTOVERS,
+    .abilityNums = 1,
+    .moves = {MOVE_SUBSTITUTE, MOVE_FOCUS_PUNCH, MOVE_DOUBLE_EDGE, MOVE_SING}
     },
     {
-    .iv = 50,
-    .lvl = 15,
-    .species = SPECIES_TREECKO,
+    .iv = 255,
+    .lvl = 100,
+    .evs = {0, 0, 0, 252, 4, 252},
+    .species = SPECIES_SCEPTILE,
+    .heldItem = ITEM_PETAYA_BERRY,
+    .abilityNums = 0,
+    .moves = {MOVE_SUBSTITUTE, MOVE_LEECH_SEED, MOVE_LEAF_BLADE, MOVE_THUNDER_PUNCH}
     }
 };
 
@@ -10413,29 +10447,45 @@ static const struct TrainerMonNoItemDefaultMoves sParty_Cristin1[] = {
     }
 };
 
-static const struct TrainerMonNoItemDefaultMoves sParty_MayRustboroTreecko[] = {
+static const struct TrainerMonItemCustomMovesEVs sParty_MayRustboroTreecko[] = {
     {
-    .iv = 25,
-    .lvl = 13,
-    .species = SPECIES_LOTAD,
+    .iv = 255,
+    .lvl = 100,
+    .evs = {0, 252, 0, 0, 4, 252},
+    .species = SPECIES_SHIFTRY,
+    .heldItem = ITEM_LEFTOVERS,
+    .abilityNums = 0,
+    .moves = {MOVE_SUNNY_DAY, MOVE_SOLAR_BEAM, MOVE_BRICK_BREAK, MOVE_QUICK_ATTACK}
     },
     {
-    .iv = 50,
-    .lvl = 15,
-    .species = SPECIES_TORCHIC,
+    .iv = 255,
+    .lvl = 100,
+    .evs = {80, 252, 0, 0, 0, 176},
+    .species = SPECIES_BLAZIKEN,
+    .heldItem = ITEM_SALAC_BERRY,
+    .abilityNums = 0,
+    .moves = {MOVE_REVERSAL, MOVE_FIRE_BLAST, MOVE_QUICK_ATTACK, MOVE_SWORDS_DANCE}
     }
 };
 
-static const struct TrainerMonNoItemDefaultMoves sParty_MayRustboroTorchic[] = {
+static const struct TrainerMonItemCustomMovesEVs sParty_MayRustboroTorchic[] = {
     {
-    .iv = 25,
-    .lvl = 13,
-    .species = SPECIES_TORKOAL,
+    .iv = 255,
+    .lvl = 100,
+    .evs = {100, 0, 0, 252, 0, 156},
+    .species = SPECIES_NINETALES,
+    .heldItem = ITEM_LEFTOVERS,
+    .abilityNums = 0,
+    .moves = {MOVE_HEAT_WAVE, MOVE_HYPNOSIS, MOVE_WILL_O_WISP , MOVE_FAINT_ATTACK}
     },
     {
-    .iv = 50,
-    .lvl = 15,
-    .species = SPECIES_MUDKIP,
+    .iv = 255,
+    .lvl = 100,
+    .evs = {252, 0, 156, 0, 100, 0},
+    .species = SPECIES_SWAMPERT,
+    .heldItem = ITEM_CHESTO_BERRY,
+    .abilityNums = 0,
+    .moves = {MOVE_EARTHQUAKE, MOVE_ROCK_SLIDE, MOVE_ICE_BEAM, MOVE_REST}
     }
 };
 
