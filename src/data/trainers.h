@@ -2157,8 +2157,8 @@ const struct Trainer gTrainers[] = {
         .trainerName = _("TAKAO"),
         .items = {},
         .doubleBattle = FALSE,
-        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,
-        .party = NO_ITEM_DEFAULT_MOVES(sParty_Takao),
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT | AI_SCRIPT_CHECK_VIABILITY,
+        .party = ITEM_CUSTOM_MOVES(sParty_Takao),
     },
 
     [TRAINER_HITOSHI] =
@@ -3199,10 +3199,10 @@ const struct Trainer gTrainers[] = {
         .encounterMusic_gender = TRAINER_ENCOUNTER_MUSIC_MALE,
         .trainerPic = TRAINER_PIC_LEADER_BRAWLY,
         .trainerName = _("BRAWLY"),
-        .items = {ITEM_SUPER_POTION, ITEM_SUPER_POTION, ITEM_NONE, ITEM_NONE},
-        .doubleBattle = FALSE,
+        .items = {ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE, ITEM_FULL_RESTORE},
+        .doubleBattle = TRUE,
         .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT | AI_SCRIPT_CHECK_VIABILITY,
-        .party = ITEM_CUSTOM_MOVES(sParty_Brawly1),
+        .party = CUSTOM_MOVES_EVS(sParty_Brawly1),
     },
 
     [TRAINER_WATTSON_1] =
@@ -4077,8 +4077,8 @@ const struct Trainer gTrainers[] = {
         .trainerName = _("ELLIOT"),
         .items = {},
         .doubleBattle = FALSE,
-        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,
-        .party = NO_ITEM_DEFAULT_MOVES(sParty_Elliot1),
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT | AI_SCRIPT_CHECK_VIABILITY,
+        .party = ITEM_CUSTOM_MOVES(sParty_Elliot1),
     },
 
     [TRAINER_NED] =
@@ -4089,8 +4089,8 @@ const struct Trainer gTrainers[] = {
         .trainerName = _("NED"),
         .items = {},
         .doubleBattle = FALSE,
-        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,
-        .party = NO_ITEM_DEFAULT_MOVES(sParty_Ned),
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT | AI_SCRIPT_CHECK_VIABILITY,
+        .party = ITEM_CUSTOM_MOVES(sParty_Ned),
     },
 
     [TRAINER_DALE] =
@@ -5109,8 +5109,8 @@ const struct Trainer gTrainers[] = {
         .trainerName = _("JOCELYN"),
         .items = {},
         .doubleBattle = FALSE,
-        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,
-        .party = NO_ITEM_DEFAULT_MOVES(sParty_Jocelyn),
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT | AI_SCRIPT_CHECK_VIABILITY,
+        .party = ITEM_CUSTOM_MOVES(sParty_Jocelyn),
     },
 
     [TRAINER_LAURA] =
@@ -5121,8 +5121,8 @@ const struct Trainer gTrainers[] = {
         .trainerName = _("LAURA"),
         .items = {},
         .doubleBattle = FALSE,
-        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,
-        .party = NO_ITEM_DEFAULT_MOVES(sParty_Laura),
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT | AI_SCRIPT_CHECK_VIABILITY,
+        .party = ITEM_CUSTOM_MOVES(sParty_Laura),
     },
 
     [TRAINER_CYNDY_1] =
@@ -6873,8 +6873,8 @@ const struct Trainer gTrainers[] = {
         .trainerName = _("BRENDEN"),
         .items = {},
         .doubleBattle = FALSE,
-        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,
-        .party = NO_ITEM_DEFAULT_MOVES(sParty_Brenden),
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT | AI_SCRIPT_CHECK_VIABILITY,
+        .party = ITEM_CUSTOM_MOVES(sParty_Brenden),
     },
 
     [TRAINER_LILITH] =
@@ -6885,8 +6885,8 @@ const struct Trainer gTrainers[] = {
         .trainerName = _("LILITH"),
         .items = {},
         .doubleBattle = FALSE,
-        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,
-        .party = NO_ITEM_DEFAULT_MOVES(sParty_Lilith),
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT | AI_SCRIPT_CHECK_VIABILITY,
+        .party = ITEM_CUSTOM_MOVES(sParty_Lilith),
     },
 
     [TRAINER_CRISTIAN] =
@@ -6897,8 +6897,8 @@ const struct Trainer gTrainers[] = {
         .trainerName = _("CRISTIAN"),
         .items = {},
         .doubleBattle = FALSE,
-        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE,
-        .party = NO_ITEM_DEFAULT_MOVES(sParty_Cristian),
+        .aiFlags = AI_SCRIPT_CHECK_BAD_MOVE | AI_SCRIPT_TRY_TO_FAINT | AI_SCRIPT_CHECK_VIABILITY,
+        .party = ITEM_CUSTOM_MOVES(sParty_Cristian),
     },
 
     [TRAINER_SYLVIA] =
